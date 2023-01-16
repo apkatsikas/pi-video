@@ -4,6 +4,10 @@ import os
 
 def processor(channel):
     return list(channel.getdata())
+    # other write option
+    # pixels = list(channel.getdata())
+    # width, height = channel.size
+    # return [pixels[i * width:(i + 1) * width] for i in range(height)]
 
 
 def run_file(full_file, file_dir, name):
